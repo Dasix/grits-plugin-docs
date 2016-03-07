@@ -1,0 +1,13 @@
+language: node_js
+before_install:
+- chmod +x ./scripts -R
+node_js:
+- "4.3"
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: luke@chavers.io
+  api_key:
+    secure: XGEbbmF53xWHXw/v2cIn5qJ3iv/vjCcU72JSohRKIJaLUjcvgEoNnT0hM1eIMloc/AAhg/fJh06p3sv1Xf2x37H6BVudiBuC+70T7B9sN6UYbvKkGO+Rrr/lGne6c1tPhzCL0YVVpZxuUv7Tn2lK5rKDZENwEXVO8hbsPoiu8dAo5AfkbXdVImCjHMMa8QYcnjNxrDT7J32ffvvhcyx5X0qvwZLRHhNk07IfFcs5aVy7c+SetG2Ky0AX9vj4J8g36sj031dhVzLnpyuviGDXEMAd+70IsM4RTLWnOewnI/G0PWukbCisn5ecVkpTat73CXA5ObEdURueZVRMVbQybTxO5BzxKVj4dVPjpzSocrxVi8mOEdgqhXgZIH7R+I3E6G1bFQKygXvo5NPujr/Yosz3kCiZ56XisO234tzUr9D/RyOSEU0DYILYq7Be2kbmitsnaHxCMSwvJbaCk9yboFlkjJ3ssIehFH9EMAZZbRCuLtIKB2x8XLIwrMp3hBhTNaba/zjL1rJi8U32wjSI45+t92W6ZzUze7wZsQRzztTq3dwuih7S93+Cyk7Z/3tRfX28MERz1HSNPN8OLP0af6S3jAVpRa1nps500/Dqe2c33iKMri31xANvV5BeU/9MFMJc2xM8OpzmT/6KyAirCZWYOaozX7EkMqEoBkRTuCY=
+  on:
+    repo: Dasix/grits

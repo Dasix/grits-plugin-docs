@@ -1,0 +1,46 @@
+{
+	"tags"          : {
+		"allowUnknownTags" : true,
+		"dictionaries"     : [
+			"jsdoc",
+			"closure"
+		]
+	},
+	"source"        : {
+		"include"        : [
+			"lib",
+			"package.json",
+			"README.md"
+		],
+		"exclude"        : [ ],
+		"includePattern" : ".js$",
+		"excludePattern" : "(node_modules/|docs)"
+	},
+	"plugins"       : [
+		"plugins/markdown",
+		"node_modules/c2cs-jsdoc/plugins/async/async.js",
+		"node_modules/c2cs-jsdoc/plugins/rpc/rpc.js",
+		"node_modules/c2cs-jsdoc/plugins/api/api.js",
+		"node_modules/c2cs-jsdoc/plugins/timeout/timeout.js",
+		"node_modules/c2cs-jsdoc/plugins/aka/aka.js",
+		"node_modules/c2cs-jsdoc/plugins/autoprivate/autoprivate.js",
+		"node_modules/c2cs-jsdoc/plugins/property_helpers/property_helpers.js",
+		"node_modules/c2cs-jsdoc/plugins/propertyof/propertyof.js"
+	],
+	"markdown"      : {
+		"excludeTags" : [ "author" ]
+	},
+	"templates"     : {
+		"cleverLinks"    : false,
+		"monospaceLinks" : true
+	},
+	"opts"          : {
+		"destination" : "./docs/html/",
+		"encoding"    : "utf8",
+		"private"     : true,
+		"recurse"     : true,
+		"template"    : "./node_modules/c2cs-jsdoc",
+		"tutorials"   : "./docs/tutorials",
+		"verbose"     : true
+	}
+}

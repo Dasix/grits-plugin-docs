@@ -1,0 +1,21 @@
+{
+	"apps" : [
+
+		{
+			"name"             : "watch-doc-source",
+			"script"           : "/lib/node_modules/grunt-cli/bin/grunt",
+			"args"             : ["watch-docs"],
+			"watch"            : false,
+			"exec_interpreter" : "node",
+			"cwd"              : "/project"
+		},{
+			"name"             : "watch-test-source",
+			"script"           : "/lib/node_modules/grunt-cli/bin/grunt",
+			"args"             : ["watch-tests"],
+			"watch"            : false,
+			"exec_interpreter" : "node",
+			"cwd"              : "/project"
+		}
+
+	]
+}
