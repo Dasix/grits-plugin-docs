@@ -1,0 +1,34 @@
+$section-menu-color-bg: #F1F2F4;
+$section-menu-color-bg-dk: darken($section-menu-color-bg, 10);
+$section-menu-color-fg: black;
+$section-menu-color-fg-lt: #666;
+
+#section-wiki-menu {
+	background-color: $section-menu-color-bg;
+
+	A {
+		color: $section-menu-color-fg;
+	}
+
+	.active A.active-link {
+
+		background-color: $section-menu-color-bg-dk;
+		:active, :focus, :hover {
+			background-color: $section-menu-color-bg-dk;
+		}
+
+	}
+
+
+	H1 {
+		font-size: 22px;
+	}
+
+}
+
+.nav-toc {
+	LI A {
+		color: $section-menu-color-fg-lt !important;
+		margin-left: 15px;
+	}
+}

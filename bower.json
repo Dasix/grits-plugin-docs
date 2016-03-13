@@ -1,0 +1,28 @@
+{
+  "name": "grits-plugins-docs",
+  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Docs",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "grits",
+    "dasix"
+  ],
+  "authors": [
+    "Luke Chavers <luke@chavers.io>"
+  ],
+  "license": "None",
+  "homepage": "http://www.dasix.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6"
+  }
+}

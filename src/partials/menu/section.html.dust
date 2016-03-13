@@ -1,0 +1,37 @@
+<div class="wiki-menu-inner">
+
+	{@sectionToc}
+		<h1>Table of Contents</h1>
+		<ul class="nav nav-pills nav-stacked">
+			{#items}
+				<li role="presentation" {#isBasePage}class="active"{/isBasePage}>
+					<a href="/{relBaseName}.html" {#isBasePage}class="active-link"{/isBasePage}>
+						<span class="glyphicon {#isBasePage}glyphicon-expand{:else}glyphicon-collapse-down{/isBasePage}" aria-hidden="true"></span>
+						<span class="toc-section-id">{sectionId}</span>{title}
+					</a>
+
+					{#isBasePage}<div id="inner-toc" data-section-id="{sectionId}"></div>{/isBasePage}
+
+				</li>
+			{/items}
+		</ul>
+	{/sectionToc}
+
+	{@relatedPages}
+		{#hasResults}
+			<h1>Related Articles</h1>
+			<ul class="nav nav-pills nav-stacked">
+			{#items}
+				<li role="presentation">
+					<a href="/{relBaseName}.html">
+						<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
+						{title}
+					</a>
+				</li>
+			{/items}
+			</ul>
+		{/hasResults}
+	{/relatedPages}
+
+</div>
+

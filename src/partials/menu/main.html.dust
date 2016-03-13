@@ -1,0 +1,22 @@
+<div class="wiki-menu-inner">
+
+	{#data.main-menu.sections}
+
+		<h1>{name}</h1>
+		<ul class="nav nav-pills nav-stacked">
+
+			{#items}
+				<li role="presentation">
+					<a href="{link}">
+						<span class="glyphicon glyphicon-{icon}" aria-hidden="true"></span>
+						{text}
+					</a>
+				</li>
+			{/items}
+
+		</ul>
+
+	{/data.main-menu.sections}
+
+</div>
+

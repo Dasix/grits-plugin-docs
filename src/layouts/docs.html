@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Grits Documentation Plugin</title>
+	<link rel="stylesheet" href="/css/grits-docs.css" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/agate.min.css">
+	<script type="text/javascript" src="/lib/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="/lib/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/scripts/toc.js"></script>
+</head>
+<body>
+
+<div id="wiki-content-outer" class="container-fluid">
+	<div id="wiki-content-row" class="row">
+
+		<div id="main-wiki-menu" class="col-md-2 wiki-menu menu-main">
+			{>"partial/menu/main"/}
+		</div>
+
+		<div id="section-wiki-menu" class="col-md-2 wiki-menu menu-section">
+			{>"partial/menu/section"/}
+		</div>
+
+		<div id="wiki-content-inner" class="col-md-8 wiki-body">
+
+			{+bodyContent /}
+
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>

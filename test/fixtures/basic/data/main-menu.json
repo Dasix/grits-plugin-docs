@@ -1,0 +1,56 @@
+{
+	"sections": [
+		{
+			"name": "General Information",
+			"items": [
+				{
+					"text": "Welcome",
+					"link": "/index.html",
+					"icon": "star"
+				},{
+					"text": "Projects",
+					"link": "#",
+					"icon": "tasks"
+				},{
+					"text": "Roadmap",
+					"link": "#",
+					"icon": "road"
+				},{
+					"text": "General Tools",
+					"link": "#",
+					"icon": "wrench"
+				}
+			]
+		},{
+			"name": "Development",
+			"items": [
+				{
+					"text": "Architecture",
+					"link": "#",
+					"icon": "cloud"
+				},{
+					"text": "Conventions",
+					"link": "#",
+					"icon": "book"
+				},{
+					"text": "Development Tools",
+					"link": "/development/tools/gitlab/linking-repositories.html",
+					"icon": "wrench"
+				}
+			]
+		},{
+			"name": "Misc",
+			"items": [
+				{
+					"text": "Render Tests",
+					"link": "/tests/index.html",
+					"icon": "wrench"
+				},{
+					"text": "The Archives",
+					"link": "#",
+					"icon": "floppy-disk"
+				}
+			]
+		}
+	]
+}

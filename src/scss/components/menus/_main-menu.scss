@@ -1,0 +1,21 @@
+$main-menu-color-bg: #404853;
+$main-menu-color-fg: #D1D9DC;
+$main-menu-color-fg-dk: darken( $main-menu-color-fg, 30 );
+
+#main-wiki-menu {
+	background-color: $main-menu-color-bg;
+	color: $main-menu-color-fg;
+
+	A {
+		color: $main-menu-color-fg;
+	}
+
+	H1 {
+		color: $main-menu-color-fg-dk;
+		font-size: $font-size-base;
+		text-transform: uppercase;
+	}
+
+}
+
+

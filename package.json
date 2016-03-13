@@ -1,39 +1,40 @@
 {
-  "name": "grits-plugin-docs",
-  "version": "0.1.0",
-  "description": "A Grits plugin for generating documentation",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Dasix/grits-plugin-docs.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Dasix/grits-plugin-docs"
-  },
-  "author": {
-    "name": "Luke Chavers",
-    "email": "luke@chavers.io",
-    "url": "http://www.lukechavers.com/"
-  },
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
-  },
-  "keywords": [
-    "dasix",
-    "grits",
-    "docs",
-    "documentation"
-  ],
-  "devDependencies": {
-    "c2cs-jsdoc": "^0.3.10",
-    "chai": "3.4.1",
-    "chai-html": "0.0.4-0",
-    "mocha": "2.3.4"
-  },
-  "dependencies": {
-    "bluebird": "3.1.1",
-    "lodash": "4.0.0",
-    "tipe": "0.1.12"
-  }
+	"name"            : "grits-plugin-docs",
+	"version"         : "0.1.0",
+	"description"     : "A Grits plugin for generating documentation",
+	"license"         : "MIT",
+	"repository"      : {
+		"type" : "git",
+		"url"  : "https://github.com/Dasix/grits-plugin-docs.git"
+	},
+	"bugs"            : {
+		"url" : "https://github.com/Dasix/grits-plugin-docs"
+	},
+	"author"          : {
+		"name"  : "Luke Chavers",
+		"email" : "luke@chavers.io",
+		"url"   : "http://www.lukechavers.com/"
+	},
+	"main"            : "lib/plugin.js",
+	"scripts"         : {
+		"test" : "./node_modules/mocha/bin/mocha",
+		"live" : "scripts/live.sh"
+	},
+	"keywords"        : [
+		"dasix",
+		"grits",
+		"docs",
+		"documentation"
+	],
+	"devDependencies" : {
+		"c2cs-jsdoc" : "^0.3.10",
+		"chai"       : "3.4.1",
+		"chai-html"  : "0.0.4-0",
+		"mocha"      : "2.3.4"
+	},
+	"dependencies"    : {
+		"bluebird" : "3.1.1",
+		"lodash"   : "4.0.0",
+		"tipe"     : "0.1.12"
+	}
 }
