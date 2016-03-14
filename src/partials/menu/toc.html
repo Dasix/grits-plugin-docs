@@ -1,12 +1,12 @@
-<div class="wiki-menu-inner">
+<div class="doc-menu-inner">
 
 	{@sectionToc}
-		<h1>Table of Contents</h1>
+		<h3>Table of Contents</h3>
 		<ul class="nav nav-pills nav-stacked">
 			{#items}
 				<li role="presentation" {#isBasePage}class="active"{/isBasePage}>
 					<a href="/{relBaseName}.html" {#isBasePage}class="active-link"{/isBasePage}>
-						<span class="glyphicon {#isBasePage}glyphicon-expand{:else}glyphicon-collapse-down{/isBasePage}" aria-hidden="true"></span>
+						<!-- span class="glyphicon {#isBasePage}glyphicon-expand{:else}glyphicon-collapse-down{/isBasePage}" aria-hidden="true"></span-->
 						<span class="toc-section-id">{sectionId}</span>{title}
 					</a>
 
@@ -19,12 +19,12 @@
 
 	{@relatedPages}
 		{#hasResults}
-			<h1>Related Articles</h1>
+			<h3>Related Articles</h3>
 			<ul class="nav nav-pills nav-stacked">
 			{#items}
 				<li role="presentation">
 					<a href="/{relBaseName}.html">
-						<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
+						<!-- span class="glyphicon glyphicon-expand" aria-hidden="true"></span -->
 						{title}
 					</a>
 				</li>

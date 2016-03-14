@@ -10,9 +10,7 @@ section: gitlab
 order: 1000
 ---
 
-# Linking Repositories
-
-## The Use Case
+# Usage Scenario
 
 Sometimes you need to include repositories within other repositories.  This can
 be done somewhat easily using Git Submodules.  When you add a submodule to a project
@@ -35,7 +33,7 @@ of the `docs/c2cs-devwiki-4` project and the build failed because Strider does
 not have access to the `nodejs/c2cs-dustjs-renderer` _within_ the `docs/c2cs-devwiki-4`
 build context.
 
-## The Problem
+# About The Problem
 
 This is caused by the fact that when Strider hooks into GitLab, it provides a unique
 public key on a per-project basis.  You can see the key Strider is using by opening
@@ -46,7 +44,7 @@ So, whenever Strider is pulling the parent project with `--recursive` and it com
 across the submodule, it will try to pull it using the parent project's key.. which
 is not connected to the submodule's repository. 
 
-## The Solution
+# The Solution
 
 Strider is using a mechanism that GitLab refers to as a "Deploy Key", it is basically
 a read-only key for a single project.
@@ -64,7 +62,7 @@ the child project's (submodule) configuration in GitLab.
 After doing that, GitLab should accept the key that Strider is using for the parent
 project when it tries to pull the child project as a sub-module. 
 
-#### Demonstration
+## Demonstration
 
 ![Repository Linking in GitLab](linking-repositories.gif "Repository Linking in GitLab using Deploy Keys")
 

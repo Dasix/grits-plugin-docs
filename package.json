@@ -17,8 +17,9 @@
 	},
 	"main"            : "lib/plugin.js",
 	"scripts"         : {
-		"test" : "./node_modules/mocha/bin/mocha",
-		"live" : "scripts/live.sh"
+		"test"         : "./node_modules/mocha/bin/mocha",
+		"live"         : "scripts/live.sh",
+		"update-grits" : "scripts/update-grits.sh"
 	},
 	"keywords"        : [
 		"dasix",

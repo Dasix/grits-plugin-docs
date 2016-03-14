@@ -1,0 +1,33 @@
+#doc-content-inner {
+
+	H1 {
+		page-break-before: always;
+		page-break-after: avoid;
+
+		:first-of-type {
+			page-break-before: avoid;
+		}
+
+	}
+
+	H2, H3, H4, H5, H6 {
+		page-break-after: avoid;
+	}
+
+}
+
+@media screen {
+	.doc-print-only {
+		display: none;
+	}
+}
+@media print {
+	.doc-print-header {
+		position: fixed;
+		top: 0;
+	}
+	.doc-print-footer {
+		position: fixed;
+		bottom: 0;
+	}
+}
