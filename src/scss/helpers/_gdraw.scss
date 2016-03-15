@@ -1,0 +1,57 @@
+.gdraw-outer {
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	font-family: Helvetica, arial, freesans, clean, sans-serif;
+	font-size: 12px;
+	color: #666;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.gdraw-body {
+	text-align: center;
+}
+
+.gdraw-id {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+	font-size: 12px;
+	color: #999;
+}
+
+.gdraw-footer {
+	border-top: 1px solid #dddddd;
+	background-image: url(/images/gdraw/google-drive-icon.png);
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+	background-position-x: 5px;
+	background-color: #f7f7f7;
+	padding: 10px 10px 10px 40px;
+	height: 37px;
+}
+
+@media print {
+	.gdraw-footer {
+		display: none;
+	}
+}
+
+.gdraw-google, .gdraw-edit-link {
+	font-weight: bold;
+}
+
+.gdraw-footer-left {
+	float: left;
+}
+
+.gdraw-footer-right {
+	float: right;
+}
+
+.gdraw-edit-link {
+	color: #666;
+}
+
+.gdraw-edit-link:hover {
+	color: #666;
+	text-decoration: none;
+}
