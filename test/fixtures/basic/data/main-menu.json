@@ -39,16 +39,20 @@
 				}
 			]
 		},{
-			"name": "Misc",
+			"name": "Feature Tests",
 			"items": [
 				{
-					"text": "Render Tests",
+					"text": "Basic Rendering",
 					"link": "/tests/index.html",
 					"icon": "wrench"
 				},{
-					"text": "The Archives",
-					"link": "#",
-					"icon": "floppy-disk"
+					"text": "Styling Tests",
+					"link": "/tests/styling/tables.html",
+					"icon": "wrench"
+				},{
+					"text": "Helper Tests",
+					"link": "/tests/helpers/yuml.html",
+					"icon": "wrench"
 				}
 			]
 		}

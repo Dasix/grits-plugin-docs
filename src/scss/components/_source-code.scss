@@ -1,13 +1,141 @@
 // Set the monospace font..
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-//$code-bg: #2B2B2B !default;
-$code-color:                  #2B2B2B !default;
-//$code-bg:                     #2B2B2B !default;
 
+//$code-bg: white;
+//$code-bg: #2B2B2B !default;
+//$code-bg:                     #2B2B2B !default;
 //$kbd-color:                   #2B2B2B !default;
 //$kbd-bg:                      #2B2B2B !default;
+//$pre-border-color:            #2B2B2B !default;
 
+/*
+$code-color:                  #2B2B2B !default;
 $pre-bg:                      #2B2B2B !default;
 $pre-color:                   #eee !default;
-//$pre-border-color:            #2B2B2B !default;
 $pre-scrollable-max-height:   340px !default;
+*/
+
+
+/* HLJS: github.com style (c) Vasily Polovnyov <vast@whiteants.net> */
+
+.doc-body {
+	CODE {
+		background-color: white;
+		border: 1px solid #E1E4E5;
+		padding-left: 0.3em;
+		padding-right: 0.3em;
+		margin-left: 0.15em;
+		margin-right: 0.15em;
+		color: #E74C3C;
+	}
+	PRE {
+		//border: 3px solid red;
+		margin-top: 30px;
+		margin-bottom: 30px;
+
+		CODE {
+			background-color: transparent;
+			border: none;
+			padding-left: 0;
+			padding-right: 0;
+			margin-left: 0;
+			margin-right: 0;
+			color: #333;
+		}
+
+	}
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	color: #333;
+	background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+	color: #998;
+	font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+	color: #333;
+	font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+	color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+	color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+	color: #900;
+	font-weight: bold;
+}
+
+.hljs-subst {
+	font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+	color: #458;
+	font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+	color: #000080;
+	font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+	color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+	color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+	color: #0086b3;
+}
+
+.hljs-meta {
+	color: #999;
+	font-weight: bold;
+}
+
+.hljs-deletion {
+	background: #fdd;
+}
+
+.hljs-addition {
+	background: #dfd;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
