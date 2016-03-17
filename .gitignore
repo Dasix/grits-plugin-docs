@@ -70,3 +70,4 @@ auth/*.tar.gz
 */backup/*
 tmp/
 .grunt
+npm-debug.log*

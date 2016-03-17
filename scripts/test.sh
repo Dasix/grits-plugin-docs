@@ -11,7 +11,9 @@ echo ""
 cd /project
 
 # Run the tests with the console renderer
-mocha
+echo "No Tests Yet :("
+echo ""
+echo ""
 
 # Run the tests with the html renderer
 #mkdir -p ./doc/tests
