@@ -1,0 +1,33 @@
+//
+// The settings in this file configure page breaks for all print media.
+//
+
+#doc-content-inner {
+
+	H1 {
+		page-break-before: always;
+		page-break-after: avoid;
+	}
+
+	H1:first-of-type {
+		page-break-before: avoid;
+	}
+
+	H2, H3, H4, H5, H6 {
+		page-break-after: avoid;
+	}
+
+	PRE, BLOCKQUOTE, TABLE {
+		page-break-inside: avoid;
+	}
+
+}
+
+
+.doc-body {
+	HR {
+		page-break-after: always;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}

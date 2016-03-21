@@ -1,0 +1,23 @@
+$doc-print-content-pad-side : 7px;
+
+@media print {
+
+	#doc-content-inner {
+		background-color : #fff;
+		padding-left     : $doc-print-content-pad-side;
+		padding-right    : $doc-print-content-pad-side;
+	}
+
+	#doc-content-outer {
+		background-color: #fff;
+	}
+
+	.doc-body {
+		HR {
+			border-top-color: #fff;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+}

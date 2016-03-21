@@ -1,0 +1,38 @@
+.doc-properties-outer {
+}
+
+.doc-properties-inner {
+	//border: 1px solid red;
+}
+
+.doc-property-item-outer {
+	display: inline-block;
+	vertical-align: top;
+	padding: 12px;
+}
+
+.doc-property-item-caption {
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+
+.doc-property-item-value {
+	text-align: center;
+
+	P {
+		margin: 0;
+		padding: 2px 0 0 0;
+	}
+}
+
+.doc-property-cap-author, .doc-property-cap-authors {
+	.doc-property-item-caption, .doc-property-item-value {
+		text-align: left;
+	}
+}
+
+
+
+
+

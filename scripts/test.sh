@@ -8,7 +8,7 @@ echo "---------------------------"
 echo ""
 
 # Ensure proper directory
-cd /project
+# cd /project
 
 # Run the tests with the console renderer
 echo "No Tests Yet :("

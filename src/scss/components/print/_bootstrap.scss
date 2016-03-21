@@ -1,0 +1,35 @@
+//
+// The settings in this file are for bootstrap components.  Bootstrap actually
+// ships with a number of settings from the HTML5 boiler plate, but they
+// cause printing to look very bad; this file provides a compromise and alternative.
+//
+
+@media print {
+	.navbar {
+		display: none;
+	}
+	.btn,
+	.dropup > .btn {
+		> .caret {
+			border-top-color: #000 !important;
+		}
+	}
+	.label {
+		border: 1px solid #000;
+	}
+
+	.table {
+		border-collapse: collapse !important;
+
+		td,
+		th {
+			background-color: #fff !important;
+		}
+	}
+	.table-bordered {
+		th,
+		td {
+			border: 1px solid #ddd !important;
+		}
+	}
+}

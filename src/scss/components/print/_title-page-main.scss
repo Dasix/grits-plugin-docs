@@ -1,0 +1,40 @@
+$title-margin-top: 80px;
+$title-margin-title: 50px;
+$title-margin-properties: 120px;
+
+#doc-title-page {
+	page-break-after: always;
+
+	.title-page-image {
+		margin-top: $title-margin-top;
+		height: 350px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+
+	.title-page-text-lg, .title-page-text-med {
+		text-align: center;
+	}
+
+	.title-page-text-lg {
+		margin-top: $title-margin-title;
+		font-size: 30px;
+		font-weight: bold;
+
+	}
+
+	.title-page-text-med {
+		font-size: 26px;
+		font-weight: 200;
+		color: #666;
+	}
+
+	.doc-properties-outer {
+		margin-top: $title-margin-properties;
+	}
+
+}
+
+
+

@@ -25,14 +25,15 @@ $doc-bq-text-color: darken( #2780E3, 25% );
 			margin-top: 6px;
 			margin-left: 15px;
 			font-size: 16px;
-			font-weight: bold;
+			//font-weight: bold;
+			font-weight: 300;
 
 			&:before {
 				content: "\2014   ";
 			}
 
 			STRONG {
-				font-weight: 300;
+				//font-weight: 300;
 				color: #666;
 			}
 

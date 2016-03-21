@@ -1,0 +1,16 @@
+//
+// The settings in this file only apply to PhantomJS Renderings
+//               (requires: grits-plugin-pdf)
+//
+
+#pageHeader {
+	height: 60px;
+	border-bottom: 1px solid #ddd;
+}
+
+#pageFooter {
+	text-align: right;
+	padding-top: 10px;
+	font-weight: 300;
+	color: #666;
+}

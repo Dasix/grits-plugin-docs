@@ -1,4 +1,4 @@
 #!/bin/bash
 
-npm install -g git+https://github.com/Dasix/grits.git
+npm install -g Dasix/grits#master Dasix/grits-plugin-pdf#master
 grits --version

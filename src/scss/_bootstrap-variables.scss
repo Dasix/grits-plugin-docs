@@ -4,23 +4,6 @@
 $font-family-monospace:   "Source Code Pro", Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
 
-// -- headings --
-
-$gritsd-heading-base-size: 14px;
-$gritsd-h1-multiplier: 2.50;
-$gritsd-h2-multiplier: 2.00;
-$gritsd-h3-multiplier: 1.75;
-$gritsd-h4-multiplier: 1.50;
-$gritsd-h5-multiplier: 1.20;
-$gritsd-h6-multiplier: 1.20;
-
-$font-size-h1: floor( ( $gritsd-heading-base-size * $gritsd-h1-multiplier ) ) !default;
-$font-size-h2: floor( ( $gritsd-heading-base-size * $gritsd-h2-multiplier ) ) !default;
-$font-size-h3: floor( ( $gritsd-heading-base-size * $gritsd-h3-multiplier ) ) !default;
-$font-size-h4: floor( ( $gritsd-heading-base-size * $gritsd-h4-multiplier ) ) !default;
-$font-size-h5: floor( ( $gritsd-heading-base-size * $gritsd-h5-multiplier ) ) !default;
-$font-size-h6: floor( ( $gritsd-heading-base-size * $gritsd-h6-multiplier ) ) !default;
-
 // -- navbar --
 
 $navbar-margin-bottom: 0px;

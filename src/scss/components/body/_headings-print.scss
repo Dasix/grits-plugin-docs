@@ -1,0 +1,47 @@
+$print-heading-pad-top	      : 5px;
+$print-heading-pad-bottom	  : 8px;
+
+@media print {
+
+	#doc-content-inner {
+
+		H1 {
+			margin-top      : 0;
+			padding-top     : 0;
+			padding-bottom  : 4px;
+			margin-bottom   : $print-heading-pad-bottom;
+		}
+
+		H2, H3, H4, H5, H6 {
+			margin-bottom   : 0;
+			margin-top      : 0;
+		}
+
+		H2 {
+			padding-top     : $print-heading-pad-top;
+			padding-bottom  : $print-heading-pad-bottom;
+		}
+
+		H3 {
+			padding-top     : $print-heading-pad-top;
+			padding-bottom  : ceil( $print-heading-pad-bottom * 0.50 );
+		}
+
+		H4 {
+			padding-top     : $print-heading-pad-top;
+			padding-bottom  : ceil( $print-heading-pad-bottom * 0.50 );
+		}
+
+		H5 {
+			padding-top     : $print-heading-pad-top;
+			padding-bottom  : ceil( $print-heading-pad-bottom * 0.0 );
+		}
+
+		H6 {
+			padding-top     : $print-heading-pad-top;
+			padding-bottom  : ceil( $print-heading-pad-bottom * 0.0 );
+		}
+
+	}
+
+}

@@ -1,9 +1,17 @@
+// Bootstrap Variable Overrides
+@import "bootstrap-variables";
+
 // Custom / Components
 @import "components/source-code";
 @import "components/navbar";
-@import "components/content";
+
+@import "components/body/body-main";
+@import "components/body/body-print";
+@import "components/body/headings-main";
+@import "components/body/headings-print";
+@import "components/body/headings-phantom";
+
 @import "components/toc";
-@import "components/print";
 @import "components/tables";
 @import "components/blocks";
 @import "components/definitions";
@@ -13,14 +21,21 @@
 @import "helpers/gdraw";
 @import "helpers/yuml";
 
-// Bootstrap Variable Overrides
-@import "bootstrap-variables";
+// Printing
+@import "components/print/bootstrap";
+@import "components/print/header-footer";
+@import "components/print/title-page-main";
+@import "components/print/doc-props-main";
+@import "components/print/page-breaks";
+@import "components/print/phantom-js";
+@import "components/print/main";
+
 
 // Import Bootswatch: Cosmo
 @import "bootswatch/cosmo/variables";
 
 // Import Bootstrap
-@import "bootstrap";
+@import "bootstrap-selective";
 
 // Import Bootswatch: Cosmo
 @import "bootswatch/cosmo/bootswatch";

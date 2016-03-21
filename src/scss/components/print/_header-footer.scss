@@ -1,0 +1,33 @@
+//
+// The settings in this file apply to page headers and footers for all print media,
+// including CTRL+P printouts and, if grits-plugin-pdf is installed, PhantomJS renderings.
+//
+
+.print-header-logo {
+	float: left;
+	width: 90px;
+	height: 46px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	//background-color: #eee;
+}
+
+.print-header-title-lg, .print-header-title-sm {
+	text-align: right;
+}
+
+.print-header-title-lg {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.print-header-title-sm {
+	font-size: 16px;
+	font-weight: 200;
+}
+
+.print-header-title-single {
+	margin-top: 10px;
+}
+

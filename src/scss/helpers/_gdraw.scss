@@ -8,6 +8,12 @@
 	margin-bottom: 40px;
 }
 
+.gdraw-scale {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
 .gdraw-body {
 	text-align: center;
 }
@@ -20,7 +26,7 @@
 
 .gdraw-footer {
 	border-top: 1px solid #dddddd;
-	background-image: url(/images/gdraw/google-drive-icon.png);
+	background-image: url(../images/gdraw/google-drive-icon.png);
 	background-repeat: no-repeat;
 	background-position-y: 50%;
 	background-position-x: 5px;
@@ -32,6 +38,9 @@
 @media print {
 	.gdraw-footer {
 		display: none;
+	}
+	.gdraw-outer {
+		border: none;
 	}
 }
 

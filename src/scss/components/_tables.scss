@@ -39,17 +39,33 @@ $doc-table-content-border: darken( $doc-table-stripe-color, 5% );
 			border-left: 1px solid $doc-table-content-border;
 			border-right: 1px solid $doc-table-content-border;
 			border-bottom: 1px solid $doc-table-content-border;
+			font-weight: bold;
 
 			&:nth-child(even) {
 				background-color: $doc-table-stripe-color;
+			}
+
+			TD {
+				//vertical-align: top;
+			}
+
+			EM {
+				display: block;
+				font-weight: normal;
+				font-style: normal;
 			}
 
 		}
 
 	}
 
+}
 
+@media print {
 
-
+	TABLE {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 
 }

@@ -1,3 +1,19 @@
-<div class="doc-print-only doc-print-header">
-	This is a header .......
+{?plugins.grits-plugin-docs.print-title-logo}
+	{>"partial/print/title-page"/}
+{/plugins.grits-plugin-docs.print-title-logo}
+
+<div id="pageHeader" class="doc-print-only" {?plugins.grits-plugin-docs.print-title-logo} style="display: none;"{/plugins.grits-plugin-docs.print-title-logo}>
+
+	{?plugins.grits-plugin-docs.print-header-logo}<div class="print-header-logo" style="background-image: url('{plugins.grits-plugin-docs.print-header-logo}');"></div>{/plugins.grits-plugin-docs.print-header-logo}
+
+	{?subject}
+		<div class="print-header-title-lg">{subject}</div>
+		<div class="print-header-title-sm">{title}</div>
+	{:else}
+		<div class="print-header-title-lg print-header-title-single">{title}</div>
+	{/subject}
+
 </div>
+
+<!-- pre-cache for header -->
+{?plugins.grits-plugin-docs.print-header-logo}<img src="{plugins.grits-plugin-docs.print-header-logo}" style="display: none;">{/plugins.grits-plugin-docs.print-header-logo}

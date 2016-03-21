@@ -1,6 +1,6 @@
 {
 	"name"            : "grits-plugin-docs",
-	"version"         : "0.3.0",
+	"version"         : "0.4.0",
 	"description"     : "A Grits plugin for generating documentation",
 	"license"         : "MIT",
 	"repository"      : {
@@ -19,7 +19,7 @@
 	"scripts"         : {
 		"test"         : "scripts/test.sh",
 		"live"         : "scripts/live.sh",
-		"live-pdf"     : "scripts/live-pdf.sh",
+		"grits"        : "scripts/grits.sh",
 		"update-grits" : "scripts/update-grits.sh"
 	},
 	"keywords"        : [

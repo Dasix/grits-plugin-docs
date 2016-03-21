@@ -1,0 +1,27 @@
+<div class="doc-print-only" id="doc-title-page">
+
+	<div class="title-page-image" style="background-image: url('{plugins.grits-plugin-docs.print-title-logo}');">
+		&nbsp;{! <img src="{plugins.grits-plugin-docs.print-title-logo}"> !}
+	</div>
+
+	{?subject}
+		<div class="title-page-text-lg">{subject}</div>
+		<div class="title-page-text-med">{title}</div>
+	{:else}
+		<div class="title-page-text-med title-page-text-single">{title}</div>
+	{/subject}
+
+	{@docProperties /}
+
+</div>
+
+{!
+	Force the header and footer to be blank
+	on the title page (the first page).
+!}
+<div id="pageHeader-first" class="doc-print-only" style="display: none;">&nbsp;</div>
+<div id="pageFooter-first" class="doc-print-only" style="display: none;">&nbsp;</div>
+
+
+{! Force Image Caching !}
+<img src="{plugins.grits-plugin-docs.print-title-logo}" style="display: none;">
