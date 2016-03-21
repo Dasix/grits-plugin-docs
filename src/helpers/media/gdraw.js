@@ -68,8 +68,6 @@ function calcRatio( ratio ) {
 		return 100;
 	}
 
-	console.log( "ratio:final = " + final );
-
 	// Finished
 	return final;
 
@@ -124,8 +122,6 @@ function generateGdrawByHeight( id, height ) {
 	} else {
 		styleHeight = "height: " + height + "px;";
 	}
-
-	console.log("styleHeight [" + styleHeight + "]");
 
 	var imgHtml 	= 	"<div class=\"gdraw-outer gdraw-scale\">" +
 							"<div class=\"gdraw-scale\" style=\"background-image: url(" + urlImage + "); " + styleHeight + "\"></div>" +
