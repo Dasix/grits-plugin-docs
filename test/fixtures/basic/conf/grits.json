@@ -5,10 +5,10 @@
 		"grits-plugin-docs" : {
 			"print-header-logo" : "/images/c2c-print-logo.png",
 			"print-title-logo" : "/images/c2c-title-logo.png",
-			"site-name": "grits-plugin-docs"
+			"site-name": "Grits:Docs"
 		},
 		"grits-plugin-pdf"  : {
-			"site-name": "grits-plugin-docs"
+
 		}
 	}
 }
