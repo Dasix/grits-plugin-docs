@@ -8,6 +8,7 @@ module.exports = function( chunk, context, bodies, params ) {
 	// Parse using URL
 	if( params.url !== undefined ) {
 
+		params.url = _.trimEnd( params.url, "/" );
 		params.url = ( params.url + "" ).replace("/pen", "" );
 		spl = params.url.split("/");
 
