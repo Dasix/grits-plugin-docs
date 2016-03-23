@@ -1,6 +1,6 @@
 ---
 subject: Helper Tests
-title: Google Draw Test
+title: Google Draw
 section: helper-tests
 pdf: false
 --- 

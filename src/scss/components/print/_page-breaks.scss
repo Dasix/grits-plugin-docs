@@ -31,3 +31,17 @@
 		margin-bottom: 50px;
 	}
 }
+
+$doc-print-content-pad-side : 7px;
+
+@media print {
+	.doc-body {
+		HR {
+			border-top-color: #fff;
+			height: 1px;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+

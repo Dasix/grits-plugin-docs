@@ -1,8 +1,8 @@
 ---
 subject: Helper Tests
-title: imarkup
+title: iMarkup
 section: helper-tests
-pdf: true
+pdf: false
 ---  
 
 # Grits.js Usage
