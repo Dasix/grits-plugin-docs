@@ -1,0 +1,127 @@
+// ------------------ Container / Image ----------------------------------------
+
+.imarkup-image {
+	//display: none;
+	//margin-right: 10px;
+	visibility: hidden;
+	page-break-inside: avoid;
+}
+
+.imarkup-outer {
+	border: 1px solid #ccc;
+	background-repeat: no-repeat;
+	position: relative;
+	page-break-inside: avoid;
+}
+
+
+
+// ------------------ Styles ---------------------------------------------------
+
+
+// Black (default)
+
+$imarkup-style-black-bg: #000;
+
+.imarkup-style-black {
+	color: white;
+	background-color: $imarkup-style-black-bg;
+}
+
+.imarkup-style-black.imarkup-tip-outer:after {
+	border-top-color: $imarkup-style-black-bg;
+	border-bottom-color: $imarkup-style-black-bg;
+}
+
+
+// Red
+
+$imarkup-style-red-bg: #AA0000;
+
+.imarkup-style-red {
+	color: white;
+	background-color: $imarkup-style-red-bg;
+}
+
+.imarkup-style-red.imarkup-tip-outer:after {
+	border-top-color: $imarkup-style-red-bg;
+	border-bottom-color: $imarkup-style-red-bg;
+}
+
+
+
+// ------------------ Callouts -------------------------------------------------
+
+
+.imarkup-callout-outer {
+
+	position: absolute;
+	border-radius: 50%;
+	text-align: center;  /* align the inline(-block) elements horizontally */
+}
+
+.imarkup-callout-outer:before {      /* create a full-height inline block pseudo-element */
+	content: ' ';
+	display: inline-block;
+	vertical-align: middle; /* vertical alignment of the inline element */
+	height: 100%;
+}
+
+.imarkup-callout-inner {
+	display: inline-block;
+	vertical-align: middle;          /* vertical alignment of the inline element */
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0;
+}
+
+
+// ------------------ Tips -----------------------------------------------------
+
+
+.imarkup-tip-outer {
+
+	position: absolute;
+	border-radius: 8px;
+	text-align: center;  /* align the inline(-block) elements horizontally */
+}
+
+.imarkup-tip-outer:before {      /* create a full-height inline block pseudo-element */
+	content: ' ';
+	display: inline-block;
+	vertical-align: middle; /* vertical alignment of the inline element */
+	height: 100%;
+}
+
+.imarkup-tip-inner {
+	display: inline-block;
+	vertical-align: middle;          /* vertical alignment of the inline element */
+	//font-weight: bold;
+	//text-transform: uppercase;
+	padding: 8px;
+}
+
+// Arrows (Triangles)
+
+.imarkup-tip-outer:after {
+	border-left: solid transparent 10px;
+	border-right: solid transparent 10px;
+	content: " ";
+	height: 0;
+	left: 50%;
+	margin-left: -13px;
+	position: absolute;
+	width: 0;
+}
+
+.imarkup-tip-above:after {
+	border-top-width: 10px;
+	border-top-style: solid;
+	bottom: -10px;
+}
+
+.imarkup-tip-below:after {
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	top: -10px;
+}
