@@ -60,6 +60,10 @@ grits.use("grits-plugin-docs", docConfig);
 There are some subtleties with loading plugins, but they're beyond the scope of
 this document; see the [Grits.js](https://github.com/Dasix/grits) module and its documentation for more info.
 
+## Helpers
+
+Find information about built in helpers [here](src/helpers/readme.md)
+
 ## Useful Links
 
 * [Grits.js](https://github.com/Dasix/grits)
