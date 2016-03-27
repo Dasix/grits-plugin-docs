@@ -1,5 +1,7 @@
 # Helpers Help
 
+This document is a work in progress...
+
 Find information about available helpers that ship with the Grits Docs Plugin here.
 
 ## Code Helpers
