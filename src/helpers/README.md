@@ -25,12 +25,20 @@ There is more to write about this section.
 *USAGE*
 
 1. Create and publish a Google Drawing.
-2. Get the id from the url used to share the drawing. https://docs.google.com/drawings/d/ `1FBlbv91pgvwGPH6q1-xxxxxxxx-7kQLrtjHavj4xSxyk` /pub?w=1004&h=562
+2. Get the id from the url used to share the drawing. (The bit immediately after the '.../d/')
 3. Insert the following into your markdown file.
 
 `{@gdraw id="", title="optional", <opt width="" or height=""> /}`
 
+imarkup
 
+palette
+
+youtube
+
+yuml
+
+There is more to write about this section.
 
 ## Menu Helpers
 
