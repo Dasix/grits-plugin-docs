@@ -1,6 +1,6 @@
 ---
 subject: Helper Tests
-title: imarkup
+title: Schema Viewer
 section: helper-tests
 pdf: false
 ---  

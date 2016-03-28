@@ -12,7 +12,7 @@ pdf: false
 ## Grits.js Code
 
 ```
-@jsfiddle url="https://jsfiddle.net/blazeeboy/fNPvf/"
+{~lb}@jsfiddle url="https://jsfiddle.net/blazeeboy/fNPvf/" /{~rb}
 ```
 
 ## JS Fiddle Embed Example
