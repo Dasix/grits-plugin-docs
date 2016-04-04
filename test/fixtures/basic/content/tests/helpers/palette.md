@@ -7,6 +7,8 @@ pdf: false
 
 # Palette
 
+Something before
+
 {@palette}
 Logo Blue: #ccc
 Logo: Orange|#ccc
@@ -21,6 +23,8 @@ Missing Numbers|1 2
 Hex Too Short:ab
 Hex Too Long:abcdefabc
 {/palette}
+
+Something after
 
 ---
    

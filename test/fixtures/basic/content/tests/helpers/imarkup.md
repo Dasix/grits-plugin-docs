@@ -10,9 +10,13 @@ printToc: true
 
 ## Test
 
+Something before
+
 {@imarkup
 	src="/images/hubot_testing.jpg"
 /}
+
+Something after
 
 ## Scaled
 
@@ -25,6 +29,13 @@ printToc: true
 ## Slice
 
 ### Take a Look
+
+{@imarkup
+	src="/images/imarkup-test.png"
+	crop-y1="20%"
+	crop-y2="30%"
+	callout="x:50%|y:25%|A"
+/}
 
 {@imarkup
 	src="/images/imarkup-test.png"

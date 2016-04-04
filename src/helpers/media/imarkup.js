@@ -8,7 +8,7 @@ module.exports = function( chunk, context, bodies, params ) {
 	var styleTag;
 	var dataTags = "";
 	var classes = [
-		"imarkup-image"
+		"imarkup-image", "helper-media"
 	];
 	var isFixed = false;
 

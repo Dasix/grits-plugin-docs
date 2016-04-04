@@ -21,7 +21,7 @@ function createPalette( body, classPrefix ) {
 	var title, codes;
 
 	// Overall Outer: Start
-	html += "<div class='" + classPrefix + "outer'>";
+	html += "<div class='" + classPrefix + "outer helper-media'>";
 
 	_.each( x, function( clr ) {
 

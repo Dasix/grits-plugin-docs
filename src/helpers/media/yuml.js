@@ -26,7 +26,7 @@ module.exports = function( chunk, context, bodies, params ) {
 	return chunk.tap(function(data) {
 
 		// Return
-		return "<div class=\"yuml-outer yuml-" + params.class + "\"><img src=\"http://yuml.me/diagram/" + params.style + "/class/" + _.trim(data) + "\"></div>";
+		return "<div class=\"yuml-outer yuml-" + params.class + " helper-media\"><img src=\"http://yuml.me/diagram/" + params.style + "/class/" + _.trim(data) + "\"></div>";
 
 	}).render(bodies.block, context).untap();
 

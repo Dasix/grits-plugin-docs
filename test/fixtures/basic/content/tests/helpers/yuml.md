@@ -7,9 +7,18 @@ section: helper-tests
 # YUML Test
 
 ## YUML Test A ("Plain")
+
+Something before
+
 {@yuml style="plain"}
 [start]->[finish]
 {/yuml}
+
+{@yuml style="plain"}
+[start]->[finish]
+{/yuml}
+
+Something after
 
 ## YUML Test B ("Meaty")
 {@yuml}

@@ -7,7 +7,11 @@ pdf: false
 
 # CodePen
 
-{@codepen url="http://codepen.io/joshbivens/pen/EPVQvp/" height="400"/} 
+Something before..
+
+{@codepen url="http://codepen.io/joshbivens/pen/EPVQvp/" height="400"/}
+ 
+Something after..
 
 ## The Code
 

@@ -7,7 +7,11 @@ pdf: false
 
 # jsFiddle
 
-{@jsfiddle url="https://jsfiddle.net/blazeeboy/fNPvf/"/} 
+Something before
+
+{@jsfiddle url="https://jsfiddle.net/blazeeboy/fNPvf/"/}
+ 
+Something after
 
 ## Grits.js Code
 
