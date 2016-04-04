@@ -1,63 +1,32 @@
-$special-note-blue-border: #2780E3;
-$special-note-blue-title-fg: #fff;
-$special-note-blue-body-fg: #000;
-$special-note-blue-bg: #f0f0f0;
+$special-note-blue-bg: #2780E3;
+$special-note-blue-fg: #fff;
 
-$special-note-red-border: #E84C3D;
-$special-note-red-title-fg: #fff;
-$special-note-red-body-fg: #000;
-$special-note-red-bg: #f0f0f0;
+$special-note-red-bg: #E84C3D;
+$special-note-red-fg: #fff;
 
-$special-note-orange-border: #F57E2C;
-$special-note-orange-title-fg: #fff;
-$special-note-orange-body-fg: #000;
-$special-note-orange-bg: #f0f0f0;
+$special-note-orange-bg: #F57E2C;
+$special-note-orange-fg: #fff;
 
 
 P.note-note, P.note-warning, P.note-important, P.note-incomplete {
-	border-width: 5px;
-	border-style: solid;
-	padding: 8px;
+	padding: 15px;
 	overflow: hidden;
 	margin-top: 20px;
 	margin-bottom: 20px;
-
 	SPAN:first-child {
-		display: block;
-		font-size: 14px;
-		padding: 8px;
-		position: relative;
-		left: -8px;
-		top: -8px;
-		width: 200%;
+		font-weight: bold;
 	}
-
 }
 
 P.note-note {
-	border: 5px solid $special-note-blue-border;
 	background-color: $special-note-blue-bg;
-	color: $special-note-blue-body-fg;
-	SPAN:first-child {
-		background-color: $special-note-blue-border;
-		color: $special-note-blue-title-fg;
-	}
+	color: $special-note-blue-fg;
 }
 P.note-warning {
-	border: 5px solid $special-note-red-border;
 	background-color: $special-note-red-bg;
-	color: $special-note-red-body-fg;
-	SPAN:first-child {
-		background-color: $special-note-red-border;
-		color: $special-note-red-title-fg;
-	}
+	color: $special-note-red-fg;
 }
 P.note-important, P.note-incomplete {
-	border: 5px solid $special-note-orange-border;
 	background-color: $special-note-orange-bg;
-	color: $special-note-orange-body-fg;
-	SPAN:first-child {
-		background-color: $special-note-orange-border;
-		color: $special-note-orange-title-fg;
-	}
+	color: $special-note-orange-fg;
 }
