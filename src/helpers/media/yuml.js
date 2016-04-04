@@ -124,20 +124,11 @@ function parseDiagramScale( scale ) {
 		scale = 100;
 	}
 
-	console.log("-");
-	console.log("1: " + scale );
-
 	// Round the number to 5s
 	scale = Math.round( scale / 5 ) * 5;
 
-	console.log("-");
-	console.log("2: " + scale );
-
 	// Clamp between 20 and 200
 	scale = _.clamp( scale, 20, 200 );
-
-	console.log("-");
-	console.log("3: " + scale );
 
 	// All done
 	return scale;
