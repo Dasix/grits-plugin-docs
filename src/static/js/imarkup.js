@@ -185,16 +185,19 @@ $imarkup._processContainer = function() {
 	// we will extract those now.
 	me._parseForStyleSettings();
 
-	// Fetch the relevant attributes
+	// Process the crop settings
 	me._processCropData();
 
-	// Fetch the relevant attributes
+	// Calculate the image viewport
 	me._calculateViewport();
 
-	// Fetch the relevant attributes
+	// Calculate image scaling
 	me._calculateImageScaling();
 
-	// Fetch the relevant attributes
+	// Recalculate viewport based on scale (if necessary)
+	me._recalculateViewportHeight();
+
+	// Calculate the image background position
 	me._calculateImagePosition();
 
 	// Update the image
@@ -513,6 +516,48 @@ $imarkup._calculateViewport = function() {
 		me.dim.viewport.h = me.dim.crop.h;
 
 	}
+
+};
+
+/**
+ * This image checks to see if the viewport height needs to be reduced to match the
+ * scaled image. (Fixes: https://github.com/Dasix/grits-plugin-docs/issues/26)
+ *
+ * @category Processing.Container.Viewport
+ * @instance
+ * @access private
+ * @returns {void}
+ */
+$imarkup._recalculateViewportHeight = function() {
+
+	var me = this;
+
+	// If the height was specified, we will not adjust the container.
+	// We only correct the container height if it was not forced.
+	if( me.dim.target.h === null ) {
+
+		if( me.dim.viewport.h > me.dim.scaledCrop.h ) {
+			me.dim.viewport.h = me.dim.scaledCrop.h;
+		}
+
+	}
+
+	// -- remove --
+/*
+	// Apply the factor to the image
+	me.dim.scaled.w = Math.round( me.dim.image.w / me.imageScale.factor );
+	me.dim.scaled.h = Math.round( me.dim.image.h / me.imageScale.factor );
+
+	// Apply the factor to the crop dimensions
+	me.dim.scaledCrop.w = Math.round( me.dim.crop.w / me.imageScale.factor );
+	me.dim.scaledCrop.h = Math.round( me.dim.crop.h / me.imageScale.factor );
+
+	// Apply the factor to the crop coords
+	me.cropScaled.x1 = Math.round( me.crop.x1 / me.imageScale.factor );
+	me.cropScaled.y1 = Math.round( me.crop.y1 / me.imageScale.factor );
+	me.cropScaled.x2 = Math.round( me.crop.x2 / me.imageScale.factor );
+	me.cropScaled.y2 = Math.round( me.crop.y2 / me.imageScale.factor );
+*/
 
 };
 

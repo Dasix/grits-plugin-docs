@@ -8,6 +8,12 @@ printToc: true
 
 # iMarkup Helper
 
+## Test
+
+{@imarkup
+	src="/images/hubot_testing.jpg"
+/}
+
 ## Scaled
 
 {@imarkup

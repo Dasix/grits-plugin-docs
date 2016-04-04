@@ -8,10 +8,10 @@
 			"site-name": "Grits:Docs",
 			"layoutConfig": {
 				"docs": {
-					"custom-js": [
+					"custom-jsX": [
 						"js/test-custom.js","js/test-custom-again.js"
 					],
-					"custom-css": [
+					"custom-cssX": [
 						"css/test-custom.css","css/test-custom-another.css"
 					]
 				}
