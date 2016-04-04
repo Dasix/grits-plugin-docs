@@ -1,6 +1,13 @@
 .yuml-outer {
 	text-align: center;
 	padding: 20px;
+	overflow-x: auto;
+}
+
+@media print {
+	.yuml-outer {
+		overflow-x: hidden;
+	}
 }
 
 .yuml-default {

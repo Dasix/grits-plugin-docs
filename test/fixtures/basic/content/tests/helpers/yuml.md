@@ -14,8 +14,12 @@ Something before
 [start]->[finish]
 {/yuml}
 
-{@yuml style="plain"}
+{@yuml style="plain" direction="tb" scale="small"}
 [start]->[finish]
+{/yuml}
+
+{@yuml style="scruffy" direction="lr"}
+[This]->[one],[one]->[is],[is]->[way],[way]->[too],[too]->[long]
 {/yuml}
 
 Something after
