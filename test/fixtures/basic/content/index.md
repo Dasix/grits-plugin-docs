@@ -8,6 +8,10 @@ section: welcome
 order: 100
 ---
 
+<pre>
+{@contextDump/}
+</pre>
+
 # General Information
 
 Warning: If you are not an employee of C2C Schools, LLC. or one of its subsidiaries, 

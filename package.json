@@ -1,6 +1,6 @@
 {
 	"name"            : "grits-plugin-docs",
-	"version"         : "0.4.3",
+	"version"         : "0.4.4",
 	"description"     : "A Grits plugin for generating documentation",
 	"license"         : "MIT",
 	"repository"      : {

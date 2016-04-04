@@ -5,7 +5,17 @@
 		"grits-plugin-docs" : {
 			"print-header-logo" : "/images/c2c-print-logo.png",
 			"print-title-logo" : "/images/c2c-title-logo.png",
-			"site-name": "Grits:Docs"
+			"site-name": "Grits:Docs",
+			"layoutConfig": {
+				"docs": {
+					"custom-js": [
+						"js/test-custom.js","js/test-custom-again.js"
+					],
+					"custom-css": [
+						"css/test-custom.css","css/test-custom-another.css"
+					]
+				}
+			}
 		},
 		"grits-plugin-pdf"  : {
 

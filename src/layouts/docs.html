@@ -3,11 +3,19 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<title>{>"partial/meta/page-title"/}</title>
+
+	<!-- Stylesheets -->
+
 	<link rel="stylesheet" href="/css/grits-docs.css" />
-	<script type="text/javascript" src="/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/js/toc.js"></script>
-	<script type="text/javascript" src="/js/imarkup.js"></script>
+
+	{?plugins.grits-plugin-docs.layoutConfig.docs.custom-css}
+	<!-- Custom JS -->
+	{#plugins.grits-plugin-docs.layoutConfig.docs.custom-css}
+	<link rel="stylesheet" href="{.}" />{/plugins.grits-plugin-docs.layoutConfig.docs.custom-css}{/plugins.grits-plugin-docs.layoutConfig.docs.custom-css}
+
+
+	<!-- End Stylesheets -->
+
 </head>
 <body>
 
@@ -31,6 +39,20 @@
 	</div>
 </div>
 
+<!-- JS -->
+
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/toc.js"></script>
+	<script type="text/javascript" src="/js/imarkup.js"></script>
+
+{?plugins.grits-plugin-docs.layoutConfig.docs.custom-js}
+<!-- Custom JS -->
+{#plugins.grits-plugin-docs.layoutConfig.docs.custom-js}
+<script type="text/javascript" src="{.}"></script>{/plugins.grits-plugin-docs.layoutConfig.docs.custom-js}{/plugins.grits-plugin-docs.layoutConfig.docs.custom-js}
+
+
+<!-- End JS -->
 
 </body>
 </html>
