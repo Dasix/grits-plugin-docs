@@ -1,0 +1,153 @@
+$tlhelper-icon-width: 28px;
+$tlhelper-icon-height: $tlhelper-icon-width;
+$tlhelper-icon-offset: ( ( $tlhelper-icon-width - 10px ) / 2 );
+$tlhelper-span-height: ( $tlhelper-icon-height - 6px );
+
+
+.tlhelper-outer {
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.tlhelper-labels-outer {
+	border-bottom: 1px solid #ccc;
+	height: 20px;
+	margin-bottom: 4px;
+}
+
+.tlhelper-entity-label {
+	border-right: 1px solid #ccc;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	font-size: 0.7em;
+	position: absolute;
+}
+
+.tlhelper-item {
+	display: inline-block;
+	position: absolute;
+}
+
+.tlhelper-entity-row {
+	height: $tlhelper-icon-height;
+	margin-bottom: 2px;
+	background-color: transparent;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	overflow: hidden;
+}
+
+.tlhelper-point-icon {
+	width: $tlhelper-icon-width;
+	height: $tlhelper-icon-height;
+}
+
+.tlhelper-point-caption {
+	font-size: 0.7em;
+	color: #000;
+}
+
+.tlhelper-point-date {
+	color: #777;
+	font-size: 0.7em;
+}
+
+.tlhelper-caption-empty .tlhelper-point-date {
+	color: #000;
+	font-size: 1em;
+}
+
+.tlhelper-entity-point {
+	.tlhelper-entity-inner {
+		width: 300px;
+	}
+}
+
+.tlhelper-entity-point.tlhelper-second-half {
+
+	.tlhelper-entity-inner {
+		margin-left: ( $tlhelper-icon-offset - 300px);
+	}
+
+	.tlhelper-point-icon {
+		position: absolute;
+		right: 0;
+		top: 2px;
+	}
+
+	.tlhelper-point-caption {
+		position: absolute;
+		right: ( $tlhelper-icon-width + 6px);
+		width: 300px;
+		text-align: right;
+		top: -1px;
+	}
+
+	.tlhelper-point-date {
+		position: absolute;
+		right: ( $tlhelper-icon-width + 6px);
+		width: 300px;
+		text-align: right;
+		top: 10px;
+	}
+
+	.tlhelper-caption-empty {
+		.tlhelper-point-date {
+			top: 0;
+		}
+	}
+
+}
+.tlhelper-entity-point.tlhelper-first-half {
+
+	.tlhelper-entity-inner {
+		margin-left: ( $tlhelper-icon-offset * -1);
+	}
+
+	.tlhelper-point-icon {
+		margin-top: 2px;
+	}
+
+	.tlhelper-point-caption {
+		position: absolute;
+		left: ( $tlhelper-icon-offset + 6px );
+		width: 300px;
+		top: -1px;
+	}
+
+	.tlhelper-point-date {
+		position: absolute;
+		left: ( $tlhelper-icon-offset + 6px );
+		width: 300px;
+		top: 10px;
+	}
+
+	.tlhelper-caption-empty {
+		.tlhelper-point-date {
+			top: 0;
+		}
+	}
+
+}
+
+.tlhelper-entity-span {
+
+	//border: 10px solid red;
+
+	font-size: 0.8em;
+	text-align: center;
+
+	.tlhelper-entity-inner {
+		height: $tlhelper-span-height;
+		width: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		padding-left: 8px;
+		padding-right: 8px;
+		padding-top: 1px;
+	}
+
+}
