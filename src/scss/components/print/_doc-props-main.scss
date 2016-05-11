@@ -1,8 +1,17 @@
 .doc-properties-outer {
+	min-height: 150px;
+	position: relative;
+}
+
+.doc-properties-mid {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
 }
 
 .doc-properties-inner {
-	//border: 1px solid red;
+	display: inline-block;
 }
 
 .doc-property-item-outer {

@@ -11,8 +11,8 @@ module.exports = function( chunk, context, bodies, params ) {
 
 	if( thisPage.document !== undefined && thisPage.document !== null ) {
 
-		htmlPrefix = "<div class='doc-properties-outer'><div class='doc-properties-inner'>";
-		htmlSuffix = "</div></div>";
+		htmlPrefix = "<div class='doc-properties-outer'><div class='doc-properties-mid'><div class='doc-properties-inner'>";
+		htmlSuffix = "</div></div></div>";
 
 		htmlContent = getHtmlForProperties( thisPage.document );
 

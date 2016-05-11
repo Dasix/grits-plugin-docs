@@ -204,8 +204,6 @@ function renderEntityInternals( entity, cfg ) {
 		hasCaption = false;
 	}
 
-	console.log( entity );
-
 	switch( _.trim( entity.type.toLowerCase() ) ) {
 
 		case "span":
