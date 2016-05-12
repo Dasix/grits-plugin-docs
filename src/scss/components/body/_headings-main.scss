@@ -4,13 +4,17 @@ $heading-color-primary   : darken( #3E7EBA, 10% ); // blue
 $heading-color-secondary : darken( #E17214, 5% ); // orange
 
 $gritsd-heading-base-size: 14px;
-$gritsd-h1-multiplier: 2.50;
-$gritsd-h2-multiplier: 2.00;
+$gritsd-title-lg-mult: 2.60;
+$gritsd-title-md-mult: 1.70;
+$gritsd-h1-multiplier: 2.00;
+$gritsd-h2-multiplier: 1.70;
 $gritsd-h3-multiplier: 1.60;
 $gritsd-h4-multiplier: 1.50;
 $gritsd-h5-multiplier: 1.20;
 $gritsd-h6-multiplier: 1.20;
 
+$font-size-title-lg: floor( ( $gritsd-heading-base-size * $gritsd-title-lg-mult ) ) !default;
+$font-size-title-md: floor( ( $gritsd-heading-base-size * $gritsd-title-md-mult ) ) !default;
 $font-size-h1: floor( ( $gritsd-heading-base-size * $gritsd-h1-multiplier ) ) !default;
 $font-size-h2: floor( ( $gritsd-heading-base-size * $gritsd-h2-multiplier ) ) !default;
 $font-size-h3: floor( ( $gritsd-heading-base-size * $gritsd-h3-multiplier ) ) !default;

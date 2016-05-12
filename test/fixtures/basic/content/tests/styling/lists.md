@@ -1,6 +1,9 @@
 ---
 title: Lists
 section: styling-tests
+document:
+  Authors:
+    - Luke Chavers <luke@dasix.com>
 ---
 
 # Lists

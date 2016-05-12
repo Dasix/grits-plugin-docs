@@ -1,46 +1,194 @@
-.doc-properties-outer {
-	min-height: 150px;
-	position: relative;
-}
+$doc-prop-gravatar-size: 60px;
+$doc-prop-tag-radius: 4px;
 
-.doc-properties-mid {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	text-align: center;
-}
+@media screen {
 
-.doc-properties-inner {
-	display: inline-block;
-}
-
-.doc-property-item-outer {
-	display: inline-block;
-	vertical-align: top;
-	padding: 12px;
-}
-
-.doc-property-item-caption {
-	font-weight: bold;
-	border-bottom: 1px solid #ccc;
-	text-align: center;
-}
-
-.doc-property-item-value {
-	text-align: center;
-
-	P {
-		margin: 0;
-		padding: 2px 0 0 0;
+	.doc-properties-outer {
+		margin-top: 12px;
 	}
-}
 
-.doc-property-cap-author, .doc-property-cap-authors {
+	.doc-property-item-outer {
+		display: inline-block;
+		color: white;
+		font-size: 12px;
+		margin-right: 4px;
+	}
+
 	.doc-property-item-caption, .doc-property-item-value {
-		text-align: left;
+		display: inline-block;
+		height: 22px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+
+	.doc-property-item-caption {
+		font-weight: bold;
+		white-space: nowrap;
+		border-bottom-left-radius: $doc-prop-tag-radius;
+		border-top-left-radius: $doc-prop-tag-radius;
+	}
+
+	.doc-property-item-value {
+		border-bottom-right-radius: $doc-prop-tag-radius;
+		border-top-right-radius: $doc-prop-tag-radius;
+	}
+
+
+	// Multi-value Properties (incl commas)
+	.doc-property-val-multiple {
+
+		P {
+			display: inline-block;
+			padding-left: 5px;
+		}
+
+		P:first-child {
+			padding-left: 0;
+		}
+
+		P:after {
+			content: ", "
+		}
+
+		P:last-child:after {
+			content: ""
+		}
+
+	}
+
+	// Doc-Property Tag Colors
+
+	$doc-property-tag-color-1: #2780E3; // blue
+	$doc-property-tag-color-2: #da314b; // red
+	$doc-property-tag-color-3: #1a5496; // dark blue
+	$doc-property-tag-color-4: #5d8565; // green
+	$doc-property-tag-color-5: #1c1c1c; // grey
+
+	.doc-properties-inner .doc-property-item-outer:nth-child(5n+1) {
+
+		.doc-property-item-caption {
+			background-color: $doc-property-tag-color-1;
+		}
+		.doc-property-item-value {
+			background-color: lighten( $doc-property-tag-color-1, 10 );
+		}
+
+	}
+	.doc-properties-inner .doc-property-item-outer:nth-child(5n+2) {
+
+		.doc-property-item-caption {
+			background-color: $doc-property-tag-color-2;
+		}
+		.doc-property-item-value {
+			background-color: lighten( $doc-property-tag-color-2, 10 );
+		}
+
+	}
+	.doc-properties-inner .doc-property-item-outer:nth-child(5n+3) {
+
+		.doc-property-item-caption {
+			background-color: $doc-property-tag-color-3;
+		}
+		.doc-property-item-value {
+			background-color: lighten( $doc-property-tag-color-3, 10 );
+		}
+
+	}
+	.doc-properties-inner .doc-property-item-outer:nth-child(5n+4) {
+
+		.doc-property-item-caption {
+			background-color: $doc-property-tag-color-4;
+		}
+		.doc-property-item-value {
+			background-color: lighten( $doc-property-tag-color-4, 10 );
+		}
+
+	}
+	.doc-properties-inner .doc-property-item-outer:nth-child(5n+5) {
+
+		.doc-property-item-caption {
+			background-color: $doc-property-tag-color-5;
+		}
+		.doc-property-item-value {
+			background-color: lighten( $doc-property-tag-color-5, 10 );
+		}
+
+	}
+
+	// Gravatars
+
+	.doc-property-gravatar-container {
+		height: $doc-prop-gravatar-size;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.doc-property-gravatar {
+		width: $doc-prop-gravatar-size;
+		height: $doc-prop-gravatar-size;
+		display: none;
+		margin-left: 4px;
+		border-radius: ( $doc-prop-gravatar-size / 2 );
+	}
+
+	// Show a maximum of 2 gravatars
+	.doc-property-gravatar-1,.doc-property-gravatar-2 {
+		display: inline-block !important;
 	}
 }
 
+@media print {
+
+	.doc-property-gravatar-container {
+		display: none;
+	}
+
+	.doc-properties-outer {
+		min-height: 150px;
+		position: relative;
+	}
+
+	.doc-properties-mid {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		text-align: center;
+	}
+
+	.doc-properties-inner {
+		display: inline-block;
+	}
+
+	.doc-property-item-outer {
+		display: inline-block;
+		vertical-align: top;
+		padding: 12px;
+	}
+
+	.doc-property-item-caption {
+		font-weight: bold;
+		border-bottom: 1px solid #ccc;
+		text-align: center;
+	}
+
+	.doc-property-item-value {
+		text-align: center;
+
+		P {
+			margin: 0;
+			padding: 2px 0 0 0;
+		}
+	}
+
+	.doc-property-cap-author, .doc-property-cap-authors {
+		.doc-property-item-caption, .doc-property-item-value {
+			text-align: left;
+		}
+	}
+}
 
 
 

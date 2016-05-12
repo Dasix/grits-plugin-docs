@@ -1,5 +1,5 @@
 --- 
-pdf: false
+pdf: true
 subject: SMCL Training System
 title: Project Outline and Proposal
 section: tests
@@ -7,13 +7,19 @@ order: 4006
 debugMarkdown: false
 document:
   Authors:
-    - Luke Chavers <luke@chavers.io>
+    - Luke Chavers <luke@dasix.com>
+    - Without Email
+    - Name: Asan Object
+      Email: <luke@chavers.io>
+    - name: Object Noemail
+    - name: Nobrackets Inemail
+      email: luke@chavers.io
   Creation Date: Sep 15, 2015 
   Revision: 8
   Revision Date: Sep 21, 2015
 ---  
 
-# H1 Test 
+# H1 Test
 This is a line of text... 
 ## H2 Test
 This is a line of text... 
