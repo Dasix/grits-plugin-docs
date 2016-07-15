@@ -1,10 +1,13 @@
+![Grits-Plugin-Docs](grits-docs-logo.png)
+
 [![NPM](https://nodei.co/npm/grits-plugin-docs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/grits-plugin-docs/)
 
 [![Build Status](https://travis-ci.org/Dasix/grits-plugin-docs.svg?branch=master)](https://travis-ci.org/Dasix/grits-plugin-docs/)
 
 This module is a plugin for [Grits.js](https://github.com/Dasix/grits), a static
 content builder that's designed for ease-of-use.  It provides helpers, layouts,
-partials, and alike for authoring documentation-like websites quickly and easily.
+partials, and other resources for authoring documentation-like websites quickly 
+and easily.
 
 This module is still a work in progress and should be considered as **experimental**.
 Meaningful documentation is still on the to-do list.
