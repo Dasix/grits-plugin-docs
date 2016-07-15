@@ -184,7 +184,7 @@ You can execute those scripts using `npm run-script`, like this:
 The command above will run with `live` script.  It and the other useful commands 
 are described below.
 
-### npm run-script live
+### npm run-script grits
 
 The `grits` command will launch Grits.js, which will render some 
 [test content](test/fixtures/basic).  
