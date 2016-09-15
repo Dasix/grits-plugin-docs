@@ -53,6 +53,10 @@
 					"text": "Helper Tests",
 					"link": "/tests/helpers/yuml.html",
 					"icon": "wrench"
+				},{
+					"text": "Deep Association",
+					"link": "/tests/deep1.html",
+					"icon": "wrench"
 				}
 			]
 		}

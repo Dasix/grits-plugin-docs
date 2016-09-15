@@ -1,7 +1,8 @@
 var _ = require("lodash");
 var tipe = require("tipe");
 var c = module.exports = {};
-var enableDebug = false; //true;
+var enableDebug = false;
+//var enableDebug = true;
 
 /**
  * Finds all pages that are related to the basePage by comparing the
@@ -71,6 +72,8 @@ c.getRelatedPages = function findPagesWithTag( basePage, pages ) {
  */
 c.getSectionToc = function findPagesWithTag( basePage, pages ) {
 
+	this.debugPages( pages );
+
 	// Locals
 	var me = this;
 	var tocPages = [];
@@ -78,6 +81,8 @@ c.getSectionToc = function findPagesWithTag( basePage, pages ) {
 
 	// Standardize the pages array
 	pages = getPageDataArray( pages );
+
+	this.debugPages2( pages );
 
 	// Standardize the base page
 	basePage = standardizePageData( basePage );
@@ -127,6 +132,28 @@ c.getSectionToc = function findPagesWithTag( basePage, pages ) {
 
 	// All done
 	return ret;
+
+};
+
+c.debugPages = function( pages ) {
+	return;
+	var x = pages.tests.projects.c2cschools["2x"];
+
+	console.log("\n\n\n\n--debug pages--\n\n\n\n");
+	//console.log(pages);
+	console.log(x);
+	console.log("\n\n\n\n--end debug pages--\n\n\n\n");
+
+};
+
+c.debugPages2 = function( pages ) {
+	return;
+	//var x = pages.tests.projects.c2cschools["2x"];
+
+	console.log("\n\n\n\n--debug pages 2--\n\n\n\n");
+	console.log(pages);
+	//console.log(x);
+	console.log("\n\n\n\n--end debug pages 2--\n\n\n\n");
 
 };
 

@@ -8,7 +8,7 @@ section: welcome
 order: 100
 ---
 
-# General Information
+# General Information 
 
 Warning: If you are not an employee of C2C Schools, LLC. or one of its subsidiaries, 
 you should leave, as this content will neither be useful or interesting to you.
