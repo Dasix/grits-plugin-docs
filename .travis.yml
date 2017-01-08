@@ -2,7 +2,10 @@ language: node_js
 before_install:
 - chmod +x ./scripts -R
 node_js:
-- '4.3'
+- '6'
+branches:
+  only:
+  - master
 deploy:
   skip_cleanup: true
   provider: npm
