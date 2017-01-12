@@ -54,15 +54,15 @@ sectionToc
 
 ##### About
 
-    Disqus is a networked community platform used by hundreds of thousands of 
-    sites all over the web. With Disqus, your website gains a feature-rich comment 
-    system complete with social network integration, advanced administration and 
-    moderation options, and other extensive community functions. Most importantly, 
-    by utilizing Disqus, you are instantly plugging into our web-wide community 
-    network, connecting millions of global users to your small blog or large media 
-    hub. 
-    
-    From - https://help.disqus.com/customer/portal/articles/466179-what-is-disqus-
+> Disqus is a networked community platform used by hundreds of thousands of 
+sites all over the web. With Disqus, your website gains a feature-rich comment 
+system complete with social network integration, advanced administration and 
+moderation options, and other extensive community functions. Most importantly, 
+by utilizing Disqus, you are instantly plugging into our web-wide community 
+network, connecting millions of global users to your small blog or large media 
+hub. 
+
+From - https://help.disqus.com/customer/portal/articles/466179-what-is-disqus-
 
 ##### Helper Syntax
 
