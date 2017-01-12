@@ -80,7 +80,7 @@ sectionToc
 /}
 ```
 
-##### Params Descriptions
+##### Params Descriptions - From [https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables](https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables)
 
 1. *shortname* - Tells the Disqus service your forum's shortname, which is the unique identifier for your website as registered on Disqus. If undefined, the Disqus embed will not load.
 2. *pageUrl* - Tells the Disqus service the URL of the current page. If undefined, Disqus will take the window.location.href. This URL is used to look up or create a thread if this.page.identifier is undefined. In addition, this URL is always saved when a thread is being created so that Disqus knows what page a thread belongs to.
@@ -98,4 +98,4 @@ Now, all you have to do is pass your 'shortname' to the disqus helper and you wi
 
 
 
-There is more to write about this section.
+There is more to write about these helpers..
