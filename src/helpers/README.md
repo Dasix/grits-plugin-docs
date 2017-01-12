@@ -89,7 +89,7 @@ sectionToc
 5. *pageCategoryId* - Tells the Disqus service the category to be used for the current page. This is used when creating the thread on Disqus for the first time.  
 	Categories are primarily used with our API for results filtering; categories are not used for moderation (e.g., to filter comments by category in the moderation panel). New categories can be created with our categories API endpoints. If you try using a category ID that hasn't been created within your forum settings, you'll receive a 400 Bad Request error.
 
-##### You should already have..
+##### You should already have (at minimum)..
 
 1. Created an account on Disqus
 2. Created a 'site-shortname' on disqus
