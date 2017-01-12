@@ -122,9 +122,6 @@ module.exports = function( chunk, context, bodies, params ) {
     html += "</script>\n";
     html += "<noscript>Please enable JavaScript to view the <a href=\"https://disqus.com/?ref_noscript\" rel=\"nofollow\">comments powered by Disqus.</a></noscript>";
 
-    //todo  - Remove this.
-    console.log(html);
-
     // Return the chunk to prevent HTML sanitization
     return chunk.write( html );
 
