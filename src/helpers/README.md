@@ -50,7 +50,7 @@ sectionToc
 
 ## Social Helpers
 
-### Disqus
+### Disqus - [disqus.com](http:www.disqus.com/)
 
 ##### About
 
