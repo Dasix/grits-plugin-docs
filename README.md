@@ -65,7 +65,7 @@ this document; see the [Grits.js](https://github.com/Dasix/grits) module and its
 
 ## Helpers
 
-Find information about built in helpers [here](src/helpers/README.md)
+Find information about built in helpers [here](src/helpers/README.md).
 
 ## Configuration Options
 
