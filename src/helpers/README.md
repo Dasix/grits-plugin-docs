@@ -96,6 +96,6 @@ From - https://help.disqus.com/customer/portal/articles/466179-what-is-disqus-
 
 Now, all you have to do is pass your 'shortname' to the disqus helper and you will have a working comment section!
 
-
+## More to Come..
 
 There is more to write about these helpers..
