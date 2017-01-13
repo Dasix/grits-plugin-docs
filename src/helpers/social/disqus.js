@@ -1,19 +1,19 @@
 /**
- * @desc This is a custom helper for dust.js designed for use
- *     in the grits.js plugin 'grits-plugin-docs'.
+ * This is a custom helper for dust.js designed for use
+ * in the grits.js plugin 'grits-plugin-docs'.
  *
  * @see http://www.dustjs.com/docs/helper-api/
  * @see http://www.dustjs.com/guides/dust-helpers/
  *
- * @example
- * {@disqus shortname="shortname" /}
+ * @example {@disqus shortname="shortname" /}
  *
  * @author Rob White IV <rob@dasix.com>
- * @copyright 01/07/2017
+ * @created 2017-01-07
+ * @copyright 2017 Dasix Inc
  *
  * @todo add white-matter support
  * @todo add grits-config file support
- */
+ **/
 
 module.exports = function( chunk, context, bodies, params ) {
 
@@ -35,7 +35,7 @@ module.exports = function( chunk, context, bodies, params ) {
      *      Id has to already be defined in disqus.com.
      *
      * @see https://disqus.com/admin/universalcode/
-     */
+     **/
 
     // Required Params
     // https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables
@@ -50,23 +50,29 @@ module.exports = function( chunk, context, bodies, params ) {
         html += "</pre>";
 
         return chunk.write( html );
+		
     }
 
     // Default parameters
     // https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables
-
+	// todo - Rob - clean these params up a bit more and test.
+	
     // this.page.url
     if( params.pageUrl === undefined ) {
         params.pageUrl = "window.location.href";
+		configUrl = "this.page.url = " + params.pageUrl + ";\n";
     } else {
         params.pageUrl = "'" + params.pageUrl + "'";
+		configUrl = "this.page.url = " + params.pageUrl + ";\n";
     }
 
     // this.page.title
     if( params.pageTitle === undefined ) {
         params.pageTitle = "document.title";
+		configTitle = "this.page.title = " + params.pageTitle + ";\n";
     } else {
         params.pageTitle = "'" + params.pageTitle + "'";
+		configTitle = "this.page.title = " + params.pageTitle + ";\n";
     }
 
     // this.page.identifier
@@ -85,34 +91,32 @@ module.exports = function( chunk, context, bodies, params ) {
         configCategoryId = "this.page.category_id = " + params.pageCategoryId + ";\n";
     }
 
-    // Build the URL config
-    configUrl = "this.page.url = " + params.pageUrl + ";\n";
-
-    // Build the title config
-    configTitle = "this.page.title = " + params.pageTitle + ";\n";
-
-    // Build the Disqus Source string
+    // Build the Disqus Source string for embed code
     disqusUrl = "s.src = '//" + params.shortname + ".disqus.com/embed.js';\n";
 
     // Build the HTML
+	// Comments header
     html += "<h2>Comments</h2>\n\n";
-
+	
+	// Div for Disqus Content
     html += "<div id=\"disqus_thread\"></div>\n";
+	
+	// Build universal Disqus embed script
     html += "<script>\n";
 
+	// Set Disqus config options based on user params
     html += "var disqus_config = function () {\n";
     html += configUrl;
     html += configTitle;
-
     if (params.pageIdentifier !== null) {
         html += configIdentifier;
     }
-
     if (params.pageCategoryId !== null) {
         html += configCategoryId;
     }
     html += "};\n\n";
 
+	// Build Disqus embed script
     html += "(function() {\n";
     html += "var d = document, s = d.createElement(\"script\");\n";
     html += disqusUrl;
