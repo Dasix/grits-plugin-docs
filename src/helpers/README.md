@@ -92,7 +92,7 @@ From - https://help.disqus.com/customer/portal/articles/466179-what-is-disqus-
 ##### You should already have (at minimum)..
 
 1. Created an account on Disqus
-2. Created a 'site-shortname' on disqus
+2. Created a 'site-shortname' on Disqus
 
 Now, all you have to do is pass your 'shortname' to the disqus helper and you will have a working comment section!
 
