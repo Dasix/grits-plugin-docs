@@ -10,9 +10,6 @@
  * @author Rob White IV <rob@dasix.com>
  * @created 2017-01-07
  * @copyright 2017 Dasix Inc
- *
- * @todo add white-matter support
- * @todo add grits-config file support
  **/
 
 module.exports = function( chunk, context, bodies, params ) {
@@ -55,40 +52,33 @@ module.exports = function( chunk, context, bodies, params ) {
 
     // Default parameters
     // https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables
-	// todo - Rob - clean these params up a bit more and test.
 	
     // this.page.url
     if( params.pageUrl === undefined ) {
-        params.pageUrl = "window.location.href";
-		configUrl = "this.page.url = " + params.pageUrl + ";\n";
+		configUrl = "this.page.url = window.location.href;\n";
     } else {
-        params.pageUrl = "'" + params.pageUrl + "'";
-		configUrl = "this.page.url = " + params.pageUrl + ";\n";
+		configUrl = "this.page.url = '" + params.pageUrl + "';\n";
     }
 
     // this.page.title
     if( params.pageTitle === undefined ) {
-        params.pageTitle = "document.title";
-		configTitle = "this.page.title = " + params.pageTitle + ";\n";
+		configTitle = "this.page.title = document.title;\n";
     } else {
-        params.pageTitle = "'" + params.pageTitle + "'";
-		configTitle = "this.page.title = " + params.pageTitle + ";\n";
+		configTitle = "this.page.title = '" + params.pageTitle + "';\n";
     }
 
     // this.page.identifier
     if( params.pageIdentifier === undefined ) {
         params.pageIdentifier = null;
     } else {
-        params.pageIdentifier = "'" + params.pageIdentifier + "'";
-        configIdentifier = "this.page.identifier = " + params.pageIdentifier + ";\n";
+        configIdentifier = "this.page.identifier = '" + params.pageIdentifier + "';\n";
     }
 
     // this.page.category_id
     if( params.pageCategoryId === undefined ) {
         params.pageCategoryId = null;
     } else {
-        params.pageCategoryId = "'" + params.pageCategoryId + "'";
-        configCategoryId = "this.page.category_id = " + params.pageCategoryId + ";\n";
+        configCategoryId = "this.page.category_id = '" + params.pageCategoryId + "';\n";
     }
 
     // Build the Disqus Source string for embed code

@@ -1,6 +1,6 @@
 ---
 subject: Helper Tests
-title: Disqus 2
+title: Disqus 2 - Shortname Valid
 section: helper-tests
 pdf: false
 ---  

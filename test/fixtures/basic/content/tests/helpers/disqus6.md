@@ -1,6 +1,6 @@
 ---
 subject: Helper Tests
-title: Disqus 6
+title: Disqus 6 - pageIdentifier Tests
 section: helper-tests
 pdf: false
 ---  
@@ -9,4 +9,4 @@ pdf: false
 
 Test with valid shortname and custom pageIdentifier set.
 
-{@disqus shortname="helpertest" pageIdentifier="123" /}
+{@disqus shortname="helpertest"  pageIdentifier="123"/}

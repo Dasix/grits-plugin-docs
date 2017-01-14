@@ -1,6 +1,6 @@
 ---
 subject: Helper Tests
-title: Disqus 4 - pageTitle Test
+title: Disqus 10 - pageTitle Tests
 section: helper-tests
 pdf: false
 ---  
@@ -11,6 +11,6 @@ Test with valid shortname and custom page Title set.
 
 Notes: 
 
-* Once a custom page title is set, changing it here does nothing.
+* A couple of other random tests with pageTitle.
 
-{@disqus shortname="helpertest" pageTitle="My awesome title" /}
+{@disqus shortname="helpertest" pageTitle="My Custom PageTitle" /}

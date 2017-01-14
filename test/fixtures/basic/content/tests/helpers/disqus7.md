@@ -1,6 +1,6 @@
 ---
 subject: Helper Tests
-title: Disqus 7
+title: Disqus 7 - pageIdentifier Tests
 section: helper-tests
 pdf: false
 ---  
