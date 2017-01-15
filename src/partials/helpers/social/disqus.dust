@@ -1,0 +1,6 @@
+<!--There is a disqus helper configured in the conf-->
+{@disqus
+    {#plugins.grits-plugin-docs.helpers.disqus}
+        shortname="{shortname}"
+    {/plugins.grits-plugin-docs.helpers.disqus}
+/}

@@ -15,6 +15,11 @@
 						"/css/test-custom.css"
 					]
 				}
+			},
+			"helpers": {
+				"disqus": {
+					"shortname": "helpertest"
+				}
 			}
 		},
 		"grits-plugin-pdf"  : {
