@@ -14,11 +14,11 @@ This helper should support two output types:
 
 ## Image Link Testing
 
-#### Summary - No ID
+#### No ID
 
 Testing link type embed with no ID.
 
-#### Code
+**Code**
 
 To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
 it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
@@ -32,7 +32,7 @@ Something before..
 Something after..
 ``` 
 
-#### Result
+**Result**
 
 Something before..
 
@@ -40,11 +40,11 @@ Something before..
  
 Something after..
 
-#### Summary - With ID
+#### With ID
 
 Testing link type embed with ID.
 
-#### Code
+**Code**
 
 To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
 it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
@@ -53,24 +53,24 @@ before the "@" or it won't work.
 ```dust
 Something before..
 
-{'@asciinema type="link" asciiID="14" /}
+{'@asciinema type="link" id="14" /}
 
 Something after..
 ``` 
 
-#### Result
+**Result**
 
 Something before..
 
-{@asciinema type="link" asciiID="14" /}
+{@asciinema type="link" id="14" /}
  
 Something after..
 
-#### Summary - With ID & Custom Widths
+#### With ID & Custom Widths
 
 Testing link type embed with ID and custom widths set.
 
-#### Code - Width %
+**Code** - Width %
 
 To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
 it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
@@ -79,20 +79,20 @@ before the "@" or it won't work.
 ```dust
 Something before..
 
-{'@asciinema type="link" asciiID="14" width="40%"/}
+{'@asciinema type="link" id="14" width="40%"/}
 
 Something after..
 ``` 
 
-#### Result
+**Result**
 
 Something before..
 
-{@asciinema type="link" asciiID="14" width="40%" /}
+{@asciinema type="link" id="14" width="40%" /}
  
 Something after..
 
-#### Code - Width px
+**Code** - Width px
 
 To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
 it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
@@ -101,26 +101,26 @@ before the "@" or it won't work.
 ```dust
 Something before..
 
-{'@asciinema type="link" asciiID="14" width="400px"/}
+{'@asciinema type="link" id="14" width="400px"/}
 
 Something after..
 ``` 
 
-#### Result
+**Result**
 
 Something before..
 
-{@asciinema type="link" asciiID="14" width="400px" /}
+{@asciinema type="link" id="14" width="400px" /}
  
 Something after..
 
 ## Embedded Player Testing
 
-#### Summary - No Type Set
+#### No Type Set
 
-Testing player type embed with ID and no type specified.  Should result in console log.
+Testing player type embed with ID and no type specified.
 
-#### Code
+**Code**
 
 To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
 it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
@@ -129,24 +129,24 @@ before the "@" or it won't work.
 ```dust
 Something before..
 
-{'@asciinema asciiID="6rzx761stpm3bkfdl2e569r8d" /} 
+{'@asciinema id="6rzx761stpm3bkfdl2e569r8d" /} 
 
 Something after..
 ``` 
 
-#### Result
+**Result**
 
 Something before..
 
-{@asciinema asciiID="6rzx761stpm3bkfdl2e569r8d" /}
+{@asciinema id="6rzx761stpm3bkfdl2e569r8d" /}
  
 Something after..
 
-#### Summary - Player Type Set
+#### Player Type Set
 
-Testing player type embed with ID and "player" type specified.  Should result in no console log.
+Testing player type embed with ID and "player" type specified.
 
-#### Code
+**Code**
 
 To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
 it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
@@ -155,26 +155,26 @@ before the "@" or it won't work.
 ```dust
 Something before..
 
-{'@asciinema type="player" asciiID="6rzx761stpm3bkfdl2e569r8d" /} 
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" /} 
 
 Something after..
 ``` 
 
-#### Result
+**Result**
 
 Something before..
 
-{@asciinema type="player" asciiID="6rzx761stpm3bkfdl2e569r8d" /}
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" /}
  
 Something after..
 
-#### Summary - Player params t
+#### Param timeStart
 
-Testing player type with vid starting at params.t
+Testing player type with vid starting at params.timeStart
 
-Use params.t to set vid start time.
+Use timeStart = `ss`, `mm:ss`, or `hh:mm:ss` to set vid start time.
 
-#### Code
+**Code**
 
 To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
 it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
@@ -183,26 +183,26 @@ before the "@" or it won't work.
 ```dust
 Something before..
 
-{'@asciinema type="player" asciiID="6rzx761stpm3bkfdl2e569r8d" t=05 /} 
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" timeStart=05 /} 
 
 Something after..
 ``` 
 
-#### Result
+**Result**
 
 Something before..
 
-{@asciinema type="player" asciiID="6rzx761stpm3bkfdl2e569r8d" t=05 /}
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" timeStart=05 /}
  
 Something after..
 
-#### Summary - Player params autoplay
+#### Param autoPlay
 
-Testing player type with vid autoplaying
+Testing player type with vid automatically playing
 
-Use params.autoplay to set vid to autoplay.
+Use autoplay = 1 to set vid to autoplay.
 
-#### Code
+**Code**
 
 To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
 it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
@@ -211,15 +211,333 @@ before the "@" or it won't work.
 ```dust
 Something before..
 
-{'@asciinema type="player" asciiID="6rzx761stpm3bkfdl2e569r8d" autoplay=1 /} 
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" autoPlay=1 /} 
 
 Something after..
 ``` 
 
-#### Result
+**Result**
 
 Something before..
 
-{@asciinema type="player" asciiID="6rzx761stpm3bkfdl2e569r8d" autoplay=1 /}
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" autoPlay=1 /}
+ 
+Something after..
+
+#### Param loop
+
+Testing player type with vid auto playing and looping
+
+Use loop = 1 to set vid to loop.
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" autoPlay=1 loop=1 /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" autoPlay=1 loop=1 /}
+ 
+Something after..
+
+#### Param speed (2, 4, 50)
+
+Testing player type with varying speed settings
+
+Use speed = 1 to set vid speed. Defaults to 1 or 'normal'.
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" autoPlay=1 loop=1 speed=2 /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" autoPlay=1 loop=1 speed=2 /}
+ 
+Something after..
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" autoPlay=1 loop=1 speed=4 /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" autoPlay=1 loop=1 speed=4 /}
+ 
+Something after..
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" autoPlay=1 loop=1 speed=50 /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" autoPlay=1 loop=1 speed=50 /}
+ 
+Something after..
+
+#### Param size (small, medium, big)
+
+Testing player type with varying size settings
+
+Use size = 'small' to set vid size. Defaults to 'small'.
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" /}
+ 
+Something after..
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" size="medium" /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" size="medium" /}
+ 
+Something after..
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" size="big" /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" size="big" /}
+ 
+Something after..
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" size="nope" /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" size="nope" /}
+ 
+Something after..
+
+#### Param theme
+
+Testing player type with varying theme settings
+
+Use theme = `theme` to set vid theme. Defaults to 'asciinema'.
+
+**Available Themes**
+
+* asciinema
+* tango
+* solarized-dark
+* solarized-light
+* monokai
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" theme="tango" /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" theme="tango" /}
+ 
+Something after..
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" theme="solarized-dark" /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" theme="solarized-dark" /}
+ 
+Something after..
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" theme="solarized-light" /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" theme="solarized-light" /}
+ 
+Something after..
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" theme="monokai" /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" theme="monokai" /}
+ 
+Something after..
+
+**Code**
+
+To display this code, I have to insert a " ' " before the "@" symbol.  Otherwise 
+it creates an error.  So, feel free to copy / paste the code, but remove the " ' "
+before the "@" or it won't work.
+
+```dust
+Something before..
+
+{'@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" theme="doesnt-exist" /} 
+
+Something after..
+``` 
+
+**Result**
+
+Something before..
+
+{@asciinema type="player" id="6rzx761stpm3bkfdl2e569r8d" theme="doesnt-exist" /}
  
 Something after..
