@@ -6,6 +6,9 @@
 			"print-header-logo" : "/images/c2c-print-logo.png",
 			"print-title-logo" : "/images/c2c-title-logo.png",
 			"site-name": "Grits:Docs",
+			"analytics": {
+				"ga-tracking-id": "UA-XXXXXXX-X"
+			},
 			"layoutConfig": {
 				"docs": {
 					"custom-js": [
