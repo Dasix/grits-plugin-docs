@@ -13,8 +13,21 @@
 	{#plugins.grits-plugin-docs.layoutConfig.docs.custom-css}
 	<link rel="stylesheet" href="{.}" />{/plugins.grits-plugin-docs.layoutConfig.docs.custom-css}{/plugins.grits-plugin-docs.layoutConfig.docs.custom-css}
 
-
 	<!-- End Stylesheets -->
+
+	{?plugins.grits-plugin-docs.analytics.ga-tracking-id}
+	<!-- Google Analytics -->
+	<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{plugins.grits-plugin-docs.analytics.ga-tracking-id}', 'auto');
+        ga('send', 'pageview');
+
+	</script>
+	{/plugins.grits-plugin-docs.analytics.ga-tracking-id}
 
 </head>
 <body>
@@ -50,7 +63,6 @@
 <!-- Custom JS -->
 {#plugins.grits-plugin-docs.layoutConfig.docs.custom-js}
 <script type="text/javascript" src="{.}"></script>{/plugins.grits-plugin-docs.layoutConfig.docs.custom-js}{/plugins.grits-plugin-docs.layoutConfig.docs.custom-js}
-
 
 <!-- End JS -->
 

@@ -146,6 +146,23 @@ You can add custom CSS and JS files to the `docs` layout using the `layoutConfig
 }
 ```
 
+### Analytics
+
+You can add Google Analytics to the `docs` layout using the `analytics` setting.
+
+**Example:**
+```
+{
+	"plugins" : {
+		"grits-plugin-docs" : {
+			"analytics": {
+            	"ga-tracking-id": "UA-XXXXXXX-X"  //Your GA Property Tracking ID
+            },
+		}
+	}
+}
+```
+
 # Developing
 
 ## Create a Development VM
